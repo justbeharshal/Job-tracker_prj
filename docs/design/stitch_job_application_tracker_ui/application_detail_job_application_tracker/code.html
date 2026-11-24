@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@400..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","surface-bright":"#fcf9f8","tertiary":"#705d00","surface-container-highest":"#e5e2e1","on-secondary-container":"#590027","on-primary-fixed":"#1b0063","primary-container":"#6c47ff","tertiary-fixed-dim":"#e8c426","on-background":"#1c1b1b","on-tertiary-container":"#4d3f00","surface-tint":"#5e35f1","inverse-on-surface":"#f3f0ef","error-container":"#ffdad6","primary-fixed-dim":"#c9beff","on-error":"#ffffff","on-secondary":"#ffffff","tertiary-fixed":"#ffe173","secondary-container":"#fe4c8c","on-tertiary-fixed":"#221b00","surface-variant":"#e5e2e1","on-secondary-fixed":"#3f001a","on-primary":"#ffffff","inverse-surface":"#313030","surface-container":"#f0edec","outline":"#797588","on-surface-variant":"#484556","outline-variant":"#c9c3d9","surface":"#fcf9f8","surface-dim":"#dcd9d9","surface-container-high":"#ebe7e7","surface-container-low":"#f6f3f2","inverse-primary":"#c9beff","secondary-fixed-dim":"#ffb1c4","error":"#ba1a1a","on-error-container":"#93000a","on-primary-container":"#f1ebff","secondary":"#b90a5a","primary":"#5323e6","background":"#fcf9f8","secondary-fixed":"#ffd9e0","tertiary-container":"#caa900","on-primary-fixed-variant":"#4500d8","on-surface":"#1c1b1b","surface-container-lowest":"#ffffff","primary-fixed":"#e6deff","on-tertiary-fixed-variant":"#554500","on-secondary-fixed-variant":"#8f0043"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"1.5rem","space-xl":"2rem","gutter":"1.25rem"},"fontFamily":{"headline-xl-mobile":["Space Grotesk"],"body-lg":["DM Sans"],"headline-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"body-md":["DM Sans"],"body-sm":["DM Sans"],"headline-md":["Space Grotesk"],"headline-xl":["Space Grotesk"],"label-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"26px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r-2 border-on-surface z-50 flex flex-col pt-space-lg pb-space-xl"><div class="px-space-lg mb-space-xl"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Job Application Tracker</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container border-2 border-on-surface shadow-[4px_4px_0_#111111] font-label-lg"><a class="flex items-center px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="board" href="#"><span class="material-symbols-outlined mr-3">view_kanban</span>Board</a><a class="flex items-center px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="applications" href="#"><span class="material-symbols-outlined mr-3">work</span>Applications</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl border-b-2 border-on-surface z-40 px-space-lg flex items-center justify-end gap-space-md"><span class="font-label-lg text-label-lg text-on-surface">Harry</span><a class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface border-2 border-on-surface rounded-xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" data-path="login" href="#">Logout</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></header><main class="relative pt-16 bg-surface w-full px-margin"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Breadcrumb & Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest text-on-surface border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:bg-surface-container-high active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" data-path="applications" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Back to Applications
+    </a>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container border-2 border-on-surface rounded-xl font-label-md text-label-md -rotate-1">
+        🔥 5-Day Streak
+      </span>
+</div>
+</div>
+<!-- Header Section -->
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-lg flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-space-xs bg-surface-container-high text-on-surface border-2 border-on-surface rounded-xl font-label-md text-label-md uppercase tracking-wider">
+          Persistent Systems
+        </span>
+<span class="font-label-md text-label-md text-on-surface-variant">
+          • Full-Time • Hybrid
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-space-xs">
+        Java Backend Developer
+      </h1>
+</div>
+<!-- Stage Dropdown -->
+<div class="relative shrink-0" id="stage-dropdown-container">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-space-xs">Current Stage</label>
+<button class="w-full lg:w-52 flex items-center justify-between gap-space-sm px-space-md py-space-sm bg-tertiary-fixed text-on-tertiary-fixed border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:brightness-95 active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" id="stage-dropdown-btn" type="button">
+<span class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-fixed border border-on-surface"></span>
+<span id="current-stage-label">Interview</span>
+</span>
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-space-sm w-52 bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-xs z-30 flex-col gap-space-xs" id="stage-dropdown-menu">
+<button class="stage-option w-full text-left px-space-md py-space-xs rounded-xl font-label-lg text-label-lg hover:bg-primary-fixed text-on-surface flex items-center gap-space-sm transition-colors" data-bg="bg-primary-fixed" data-stage="Wishlist" data-text="text-on-primary-fixed" type="button">
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim border border-on-surface"></span>
+          Wishlist
+        </button>
+<button class="stage-option w-full text-left px-space-md py-space-xs rounded-xl font-label-lg text-label-lg hover:bg-secondary-fixed text-on-surface flex items-center gap-space-sm transition-colors" data-bg="bg-secondary-fixed" data-stage="Applied" data-text="text-on-secondary-fixed" type="button">
+<span class="w-3 h-3 rounded-full bg-secondary-container border border-on-surface"></span>
+          Applied
+        </button>
+<button class="stage-option w-full text-left px-space-md py-space-xs rounded-xl font-label-lg text-label-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-space-sm transition-colors" data-bg="bg-tertiary-fixed" data-stage="Interview" data-text="text-on-tertiary-fixed" type="button">
+<span class="w-3 h-3 rounded-full bg-tertiary-container border border-on-surface"></span>
+          Interview
+        </button>
+<button class="stage-option w-full text-left px-space-md py-space-xs rounded-xl font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container text-on-surface flex items-center gap-space-sm transition-colors" data-bg="bg-primary-container" data-stage="Offer" data-text="text-on-primary-container" type="button">
+<span class="w-3 h-3 rounded-full bg-primary border border-on-surface"></span>
+          Offer
+        </button>
+<button class="stage-option w-full text-left px-space-md py-space-xs rounded-xl font-label-lg text-label-lg hover:bg-error-container hover:text-on-error-container text-on-surface flex items-center gap-space-sm transition-colors" data-bg="bg-error-container" data-stage="Rejected" data-text="text-on-error-container" type="button">
+<span class="w-3 h-3 rounded-full bg-error border border-on-surface"></span>
+          Rejected
+        </button>
+</div>
+</div>
+</div>
+<!-- Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Details Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Role Details</h2>
+<span class="px-space-sm py-space-xs bg-primary-fixed text-on-primary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm rotate-1">
+            ID #4092
+          </span>
+</div>
+<div class="flex flex-col gap-space-md mt-space-xs">
+<!-- Location -->
+<div class="flex items-start gap-space-md p-space-sm bg-surface-container-low border-2 border-on-surface rounded-xl">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed border-2 border-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed">location_on</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Location</p>
+<p class="font-body-md text-body-md font-bold text-on-surface">Nagpur, India</p>
+</div>
+</div>
+<!-- Salary -->
+<div class="flex items-start gap-space-md p-space-sm bg-surface-container-low border-2 border-on-surface rounded-xl">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed border-2 border-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed">payments</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Salary</p>
+<p class="font-body-md text-body-md font-bold text-on-surface">₹14,00,000 / yr</p>
+</div>
+</div>
+<!-- Job URL -->
+<div class="flex items-start gap-space-md p-space-sm bg-surface-container-low border-2 border-on-surface rounded-xl">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed border-2 border-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed">link</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Job URL</p>
+<a class="font-body-sm text-body-sm font-bold text-primary hover:underline truncate block" href="https://careers.persistent.com" rel="noopener noreferrer" target="_blank">
+                https://careers.persistent.com/java-backend
+              </a>
+</div>
+</div>
+<!-- Dates Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low border-2 border-on-surface rounded-xl">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Applied Date</p>
+<p class="font-body-sm text-body-sm font-bold text-on-surface mt-space-xs">Oct 12, 2024</p>
+</div>
+<div class="p-space-sm bg-tertiary-fixed/40 border-2 border-on-surface rounded-xl">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Follow-up</p>
+<p class="font-body-sm text-body-sm font-bold text-on-surface mt-space-xs">Oct 24, 2024</p>
+</div>
+</div>
+</div>
+<!-- Edit & Delete Buttons -->
+<div class="grid grid-cols-2 gap-space-md pt-space-sm">
+<button class="flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-surface-container-lowest text-on-surface border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:bg-surface-container-high active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+            Edit
+          </button>
+<button class="flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-error-container text-on-error-container border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:brightness-95 active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+            Delete
+          </button>
+</div>
+</div>
+<!-- Location Map Card -->
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface uppercase">Office Hub</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nagpur, MH</span>
+</div>
+<div class="w-full h-40 bg-cover bg-center rounded-xl border-2 border-on-surface" data-location="Nagpur, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEoFxK_jIZ-ZnZ_2mzlVwHcqxMWtNjkSsYRaHRMXOQGL1PntcciRrqVRDdWPZnfdSlHGA0SuSGNOrj_XPMfP34lw0F_bV64j0fc52_4zrFeB3TalQ-a1ui3r1nSmoXmocKKQS8kDfLIUEYw1aqCaOdKvg-p79OtAaGa2uer3mplQ1qs0oXSEE8akhWQ8qQQNYNDIjujHv7-dVEzUhx5pfBS1qRUx88r3ZUlLbdURk')"></div>
+</div>
+</div>
+<!-- Right Column: Notes & Status History -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- 1. Notes Section -->
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Interview Notes</h2>
+<span class="px-space-sm py-space-xs bg-surface-container-high text-on-surface border-2 border-on-surface rounded-xl font-label-sm text-label-sm" id="notes-count">
+            2 Notes
+          </span>
+</div>
+<!-- Add Note Form -->
+<form class="flex flex-col gap-space-sm" id="add-note-form">
+<textarea class="w-full p-space-md bg-surface-container-lowest text-on-surface border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container resize-none" id="note-input" placeholder="Jot down interview questions, system design topics, or interviewer names..." rows="3"></textarea>
+<div class="flex justify-end">
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-primary-container text-on-primary-container border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:brightness-110 active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" type="submit">
+<span class="material-symbols-outlined text-[18px]">add_comment</span>
+              Add Note
+            </button>
+</div>
+</form>
+<!-- Existing Notes List -->
+<div class="flex flex-col gap-space-sm mt-space-xs" id="notes-list">
+<div class="p-space-md bg-surface-container-low border-2 border-on-surface rounded-2xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="px-space-sm py-space-xs bg-tertiary-fixed text-on-tertiary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm -rotate-1">
+                Technical Round 1
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 19, 2024 • 4:30 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-space-xs">
+              Covered Java 17 Streams, Spring Boot microservices resilience (Resilience4j), and PostgreSQL indexing strategies. Interviewer seemed happy with the caching explanation.
+            </p>
+</div>
+<div class="p-space-md bg-surface-container-low border-2 border-on-surface rounded-2xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="px-space-sm py-space-xs bg-primary-fixed text-on-primary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm rotate-1">
+                HR Screen
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 15, 2024 • 11:00 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-space-xs">
+              Confirmed notice period (30 days) and hybrid work expectations in Nagpur. Next step is Technical Round 2 with the Architecture team.
+            </p>
+</div>
+</div>
+</div>
+<!-- 2. Status History Vertical Timeline -->
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] p-space-lg flex flex-col gap-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Status History</h2>
+<div class="relative pl-space-lg flex flex-col gap-space-lg">
+<!-- Vertical Line -->
+<div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-on-surface"></div>
+<!-- Timeline Item: Interview -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-space-lg top-1 w-6 h-6 rounded-full bg-tertiary-fixed border-2 border-on-surface flex items-center justify-center z-10">
+<div class="w-2 h-2 rounded-full bg-on-surface"></div>
+</div>
+<div class="flex-1 p-space-md bg-tertiary-fixed/25 border-2 border-on-surface rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<span class="inline-block px-space-sm py-space-xs bg-tertiary-fixed text-on-tertiary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm mb-space-xs">
+                  Interview
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface">Moved to Technical Interview stage</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Oct 18, 2024</span>
+</div>
+</div>
+<!-- Timeline Item: Applied -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-space-lg top-1 w-6 h-6 rounded-full bg-secondary-fixed border-2 border-on-surface flex items-center justify-center z-10">
+<div class="w-2 h-2 rounded-full bg-on-surface"></div>
+</div>
+<div class="flex-1 p-space-md bg-surface-container-low border-2 border-on-surface rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<span class="inline-block px-space-sm py-space-xs bg-secondary-fixed text-on-secondary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm mb-space-xs">
+                  Applied
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface">Submitted application via Persistent Careers</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Oct 12, 2024</span>
+</div>
+</div>
+<!-- Timeline Item: Wishlist -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-space-lg top-1 w-6 h-6 rounded-full bg-primary-fixed border-2 border-on-surface flex items-center justify-center z-10">
+<div class="w-2 h-2 rounded-full bg-on-surface"></div>
+</div>
+<div class="flex-1 p-space-md bg-surface-container-low border-2 border-on-surface rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<span class="inline-block px-space-sm py-space-xs bg-primary-fixed text-on-primary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm mb-space-xs">
+                  Wishlist
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface">Saved Java Backend Developer role</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Oct 10, 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const dropdownBtn = document.getElementById('stage-dropdown-btn');
+    const dropdownMenu = document.getElementById('stage-dropdown-menu');
+    const stageLabel = document.getElementById('current-stage-label');
+    const stageOptions = document.querySelectorAll('.stage-option');
+
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('hidden');
+        dropdownMenu.classList.toggle('flex');
+      });
+
+      document.addEventListener('click', () => {
+        dropdownMenu.classList.add('hidden');
+        dropdownMenu.classList.remove('flex');
+      });
+
+      stageOptions.forEach((opt) => {
+        opt.addEventListener('click', () => {
+          const newStage = opt.getAttribute('data-stage');
+          const newBg = opt.getAttribute('data-bg');
+          const newText = opt.getAttribute('data-text');
+
+          stageLabel.textContent = newStage;
+          dropdownBtn.className = `w-full lg:w-52 flex items-center justify-between gap-space-sm px-space-md py-space-sm ${newBg} ${newText} border-2 border-on-surface rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:brightness-95 active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all`;
+
+          dropdownMenu.classList.add('hidden');
+          dropdownMenu.classList.remove('flex');
+        });
+      });
+    }
+
+    const noteForm = document.getElementById('add-note-form');
+    const noteInput = document.getElementById('note-input');
+    const notesList = document.getElementById('notes-list');
+    const notesCount = document.getElementById('notes-count');
+
+    if (noteForm && noteInput && notesList) {
+      noteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const text = noteInput.value.trim();
+        if (!text) return;
+
+        const noteCard = document.createElement('div');
+        noteCard.className = 'p-space-md bg-surface-container-low border-2 border-on-surface rounded-2xl flex flex-col gap-space-xs';
+        noteCard.innerHTML = `
+          <div class="flex items-center justify-between gap-space-sm">
+            <span class="px-space-sm py-space-xs bg-secondary-fixed text-on-secondary-fixed border-2 border-on-surface rounded-xl font-label-sm text-label-sm -rotate-1">
+              New Note
+            </span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface mt-space-xs"></p>
+        `;
+        noteCard.querySelector('p').textContent = text;
+        notesList.prepend(noteCard);
+        noteInput.value = '';
+
+        if (notesCount) {
+          notesCount.textContent = `${notesList.children.length} Notes`;
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@400..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","surface-bright":"#fcf9f8","tertiary":"#705d00","surface-container-highest":"#e5e2e1","on-secondary-container":"#590027","on-primary-fixed":"#1b0063","primary-container":"#6c47ff","tertiary-fixed-dim":"#e8c426","on-background":"#1c1b1b","on-tertiary-container":"#4d3f00","surface-tint":"#5e35f1","inverse-on-surface":"#f3f0ef","error-container":"#ffdad6","primary-fixed-dim":"#c9beff","on-error":"#ffffff","on-secondary":"#ffffff","tertiary-fixed":"#ffe173","secondary-container":"#fe4c8c","on-tertiary-fixed":"#221b00","surface-variant":"#e5e2e1","on-secondary-fixed":"#3f001a","on-primary":"#ffffff","inverse-surface":"#313030","surface-container":"#f0edec","outline":"#797588","on-surface-variant":"#484556","outline-variant":"#c9c3d9","surface":"#fcf9f8","surface-dim":"#dcd9d9","surface-container-high":"#ebe7e7","surface-container-low":"#f6f3f2","inverse-primary":"#c9beff","secondary-fixed-dim":"#ffb1c4","error":"#ba1a1a","on-error-container":"#93000a","on-primary-container":"#f1ebff","secondary":"#b90a5a","primary":"#5323e6","background":"#fcf9f8","secondary-fixed":"#ffd9e0","tertiary-container":"#caa900","on-primary-fixed-variant":"#4500d8","on-surface":"#1c1b1b","surface-container-lowest":"#ffffff","primary-fixed":"#e6deff","on-tertiary-fixed-variant":"#554500","on-secondary-fixed-variant":"#8f0043"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"1.5rem","space-xl":"2rem","gutter":"1.25rem"},"fontFamily":{"headline-xl-mobile":["Space Grotesk"],"body-lg":["DM Sans"],"headline-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"body-md":["DM Sans"],"body-sm":["DM Sans"],"headline-md":["Space Grotesk"],"headline-xl":["Space Grotesk"],"label-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"26px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r-2 border-on-surface z-50 flex flex-col pt-space-lg pb-space-xl"><div class="px-space-lg mb-space-xl"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Job Application Tracker</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container border-2 border-on-surface shadow-[4px_4px_0_#111111] font-label-lg"><a class="flex items-center px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container border-2 border-on-surface shadow-[4px_4px_0_#111111] font-label-lg" data-path="board" href="#"><span class="material-symbols-outlined mr-3">view_kanban</span>Board</a><a class="flex items-center px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="applications" href="#"><span class="material-symbols-outlined mr-3">work</span>Applications</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl border-b-2 border-on-surface z-40 px-space-lg flex items-center justify-end gap-space-md"><span class="font-label-lg text-label-lg text-on-surface">Harry</span><a class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface border-2 border-on-surface rounded-xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all" data-path="login" href="#">Logout</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></header><main class="relative pt-16 bg-surface w-full px-margin"><div class="flex flex-col w-full">
+<!-- Top Board Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md py-space-lg">
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Board</h1>
+<span class="inline-flex items-center px-space-sm py-space-xs bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-md text-label-md -rotate-2 shadow-[2px_2px_0_#111111]">
+        12 ACTIVE
+      </span>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<!-- Search Box -->
+<div class="relative w-full sm:w-72">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface text-[20px] pointer-events-none">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container-lowest text-on-surface placeholder:text-outline border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="board-search" placeholder="Search company, role, city..." type="text"/>
+</div>
+<!-- New Application Button -->
+<button class="inline-flex items-center justify-center gap-space-sm px-space-lg py-2.5 bg-primary-container text-on-primary border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg hover:-translate-y-0.5 active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] transition-all cursor-pointer" id="new-app-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>New Application</span>
+</button>
+</div>
+</div>
+<!-- 5-Column Kanban Board -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-gutter pb-space-xl items-start">
+<!-- Column 1: Wishlist -->
+<section class="flex flex-col gap-space-md min-w-0">
+<div class="flex items-center justify-between px-space-md py-3 bg-[#C4B5FD] text-on-surface border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+<h2 class="font-headline-sm text-headline-sm truncate">Wishlist</h2>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-lowest text-on-surface border-2 border-[#111111] rounded-full font-label-md text-label-md rotate-2 shadow-[2px_2px_0_#111111]">3</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="persistent systems frontend developer pune">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Persistent Systems</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#C4B5FD] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-2">SAVED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Frontend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Pune
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹14,00,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 18
+            </span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="cybage react native developer pune">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Cybage</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#C4B5FD] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-1">SAVED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">React Native Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Pune
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 21
+            </span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="ltimindtree java backend developer remote">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">LTIMindtree</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#C4B5FD] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-1">SAVED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Java Backend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span>Remote
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹16,50,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 24
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Column 2: Applied -->
+<section class="flex flex-col gap-space-md min-w-0">
+<div class="flex items-center justify-between px-space-md py-3 bg-[#60A5FA] text-on-surface border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<h2 class="font-headline-sm text-headline-sm truncate">Applied</h2>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-lowest text-on-surface border-2 border-[#111111] rounded-full font-label-md text-label-md -rotate-2 shadow-[2px_2px_0_#111111]">3</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="infosys frontend developer pune">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Infosys</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#60A5FA] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-2">APPLIED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Frontend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Pune
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹11,50,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 19
+            </span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="tcs java backend developer nagpur">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">TCS</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#60A5FA] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-1">APPLIED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Java Backend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Nagpur
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 22
+            </span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="tech mahindra react native developer remote">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Tech Mahindra</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#60A5FA] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-1">APPLIED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">React Native Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span>Remote
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹13,00,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 25
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Column 3: Interview (with 1 mid-drag card + dashed dropzone) -->
+<section class="flex flex-col gap-space-md min-w-0">
+<div class="flex items-center justify-between px-space-md py-3 bg-[#FFD93D] text-on-surface border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+<h2 class="font-headline-sm text-headline-sm truncate">Interview</h2>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-lowest text-on-surface border-2 border-[#111111] rounded-full font-label-md text-label-md rotate-2 shadow-[2px_2px_0_#111111]">2</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Mid-Drag Card: tilted -2deg with 8px 8px 0 #111111 shadow -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[8px_8px_0_#111111] -rotate-2 cursor-grabbing relative z-10" data-search="cognizant frontend developer pune">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Cognizant</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#FFD93D] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-2">ROUND 2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Frontend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Pune
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹14,50,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 17
+            </span>
+</div>
+</article>
+<!-- Dashed Dropzone below mid-drag card -->
+<div class="h-28 border-2 border-dashed border-[#111111] rounded-2xl bg-primary-fixed/40 flex flex-col items-center justify-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">south</span>
+<span class="font-label-md text-label-md">Drop card here</span>
+</div>
+<!-- Card 2 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="wipro java backend developer nagpur">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Wipro</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#FFD93D] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-2">TECH HR</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Java Backend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Nagpur
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹12,00,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 20
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Column 4: Offer -->
+<section class="flex flex-col gap-space-md min-w-0">
+<div class="flex items-center justify-between px-space-md py-3 bg-[#B5F23D] text-on-surface border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[20px]">celebration</span>
+<h2 class="font-headline-sm text-headline-sm truncate">Offer</h2>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-lowest text-on-surface border-2 border-[#111111] rounded-full font-label-md text-label-md -rotate-2 shadow-[2px_2px_0_#111111]">2</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="persistent systems react native developer remote">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Persistent Systems</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#B5F23D] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-2">OFFERED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">React Native Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span>Remote
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹18,00,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 16
+            </span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="ltimindtree frontend developer pune">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">LTIMindtree</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#B5F23D] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-1">OFFERED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Frontend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Pune
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹15,20,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 18
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Column 5: Rejected -->
+<section class="flex flex-col gap-space-md min-w-0">
+<div class="flex items-center justify-between px-space-md py-3 bg-[#FF6B81] text-on-surface border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111]">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[20px]">close</span>
+<h2 class="font-headline-sm text-headline-sm truncate">Rejected</h2>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-lowest text-on-surface border-2 border-[#111111] rounded-full font-label-md text-label-md rotate-1 shadow-[2px_2px_0_#111111]">2</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="tcs frontend developer nagpur">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">TCS</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#FF6B81] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm -rotate-2">CLOSED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Frontend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>Nagpur
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 10
+            </span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="kanban-card bg-surface-container-lowest p-gutter border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] hover:-translate-y-0.5 transition-transform" data-search="infosys java backend developer remote">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Infosys</h3>
+<span class="shrink-0 px-2 py-0.5 bg-[#FF6B81] text-on-surface border-2 border-[#111111] rounded-lg font-label-sm text-label-sm rotate-1">CLOSED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Java Backend Developer</p>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container text-on-surface border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span>Remote
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-[#111111] rounded-xl font-label-sm text-label-sm">
+              ₹10,50,000 / yr
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t-2 border-dashed border-[#111111]/20 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>Follow-up: May 08
+            </span>
+</div>
+</article>
+</div>
+</section>
+</div>
+<!-- Quick-Add Application Modal -->
+<div class="hidden fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-space-md" id="new-app-modal">
+<div class="w-full max-w-md bg-surface-container-lowest border-2 border-[#111111] rounded-2xl shadow-[8px_8px_0_#111111] p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">New Application</h3>
+<button class="w-9 h-9 flex items-center justify-center bg-surface-container border-2 border-[#111111] rounded-xl shadow-[2px_2px_0_#111111] cursor-pointer" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="new-app-form">
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border-2 border-[#111111] rounded-2xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Company (e.g. Persistent Systems)" required="" type="text"/>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border-2 border-[#111111] rounded-2xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Role (e.g. Frontend Developer)" required="" type="text"/>
+<div class="grid grid-cols-2 gap-space-sm">
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border-2 border-[#111111] rounded-2xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Location (e.g. Pune)" required="" type="text"/>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border-2 border-[#111111] rounded-2xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Salary (optional)" type="text"/>
+</div>
+<button class="w-full py-2.5 bg-primary-container text-on-primary border-2 border-[#111111] rounded-2xl shadow-[4px_4px_0_#111111] font-label-lg text-label-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#111111] cursor-pointer" type="submit">
+          Add to Wishlist
+        </button>
+</form>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const searchInput = document.getElementById('board-search');
+    const cards = document.querySelectorAll('.kanban-card');
+    if (searchInput) {
+      searchInput.addEventListener('input', function (e) {
+        const q = e.target.value.trim().toLowerCase();
+        cards.forEach(function (card) {
+          const hay = (card.getAttribute('data-search') || '') + ' ' + card.textContent.toLowerCase();
+          card.style.display = hay.includes(q) ? '' : 'none';
+        });
+      });
+    }
+
+    const modal = document.getElementById('new-app-modal');
+    const openBtn = document.getElementById('new-app-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const form = document.getElementById('new-app-form');
+
+    if (openBtn && modal) {
+      openBtn.addEventListener('click', function () {
+        modal.classList.remove('hidden');
+      });
+    }
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', function () {
+        modal.classList.add('hidden');
+      });
+    }
+    if (form && modal) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        modal.classList.add('hidden');
+        form.reset();
+      });
+    }
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+build/
+
+# Environment variables & secrets (Never commit secrets!)
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+*.key
+*.token
+*API KEY*
+*api-key*
+MCP API KEY.txt
+
+# Internal Prompts & AI generation instructions (Keep private)
+docs/PROMPTS.md
+*PROMPTS*
+*prompts*
+
+# Local generator scripts & temp files
+generate_plan.py
+__pycache__/
+*.pyc
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
