@@ -9,6 +9,21 @@ const VALID_SORTS = [
   'company_asc',
 ];
 
+/**
+ * Validates an ISO date string and normalizes it to YYYY-MM-DD for MySQL DATE columns.
+ * (Joi.string().isoDate() coerces dates to full ISO timestamps, which MySQL DATE rejects.)
+ */
+function isoDateOnly(label) {
+  return Joi.string()
+    .isoDate()
+    .allow('', null)
+    .optional()
+    .custom((value) => (value ? value.slice(0, 10) : value))
+    .messages({
+      'string.isoDate': `${label} must be a valid ISO date (YYYY-MM-DD)`,
+    });
+}
+
 // ── Create / Update application ───────────────────────────────────────────────
 const applicationBodySchema = Joi.object({
   company:    Joi.string().trim().min(1).max(150).required().messages({
@@ -23,12 +38,8 @@ const applicationBodySchema = Joi.object({
   }),
   salary:     Joi.string().trim().max(50).allow('', null).optional(),
   status:     Joi.string().valid(...VALID_STATUSES).default('WISHLIST'),
-  appliedOn:  Joi.string().isoDate().allow('', null).optional().messages({
-    'string.isoDate': 'Applied date must be a valid ISO date (YYYY-MM-DD)',
-  }),
-  followUpOn: Joi.string().isoDate().allow('', null).optional().messages({
-    'string.isoDate': 'Follow-up date must be a valid ISO date (YYYY-MM-DD)',
-  }),
+  appliedOn:  isoDateOnly('Applied date'),
+  followUpOn: isoDateOnly('Follow-up date'),
 });
 
 // ── Status-only patch ─────────────────────────────────────────────────────────
