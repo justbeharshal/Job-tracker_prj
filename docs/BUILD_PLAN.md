@@ -12,13 +12,13 @@
 | 7 | Test checklist, deploy, README, screenshots | Live URL works for a new user | Launch post with links + 3 lessons |
 
 ## Tasks (tick as you go)
-- [ ] Day 0 docs written
-- [ ] Day 0 design generated and checked against the Lock block
+- [x] Day 0 docs written
+- [x] Day 0 design generated and checked against the Lock block
 - [ ] Day 0 poster posted
-- [ ] Day 1 backend skeleton and schema
-- [ ] Day 2 auth
-- [ ] Day 3 applications CRUD
-- [ ] Day 4 stats, search, pagination
+- [x] Day 1 backend skeleton and schema
+- [x] Day 2 auth
+- [x] Day 3 applications CRUD
+- [x] Day 4 stats, search, pagination
 - [ ] Day 5 frontend auth and list
 - [ ] Day 6 board and dashboard
 - [ ] Day 7 deploy and launch post
