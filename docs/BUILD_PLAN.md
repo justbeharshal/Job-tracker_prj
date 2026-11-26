@@ -14,7 +14,7 @@
 ## Tasks (tick as you go)
 - [x] Day 0 docs written
 - [x] Day 0 design generated and checked against the Lock block
-- [ ] Day 0 poster posted
+- [x] Day 0 poster posted
 - [x] Day 1 backend skeleton and schema
 - [x] Day 2 auth
 - [x] Day 3 applications CRUD
