@@ -24,6 +24,7 @@ CREATE TABLE applications (
   user_id INT NOT NULL,
   company_id INT NOT NULL,
   role VARCHAR(150) NOT NULL,
+  location VARCHAR(150),
   status ENUM('WISHLIST','APPLIED','INTERVIEW','OFFER','REJECTED') NOT NULL DEFAULT 'WISHLIST',
   salary VARCHAR(50),
   job_url VARCHAR(500),
