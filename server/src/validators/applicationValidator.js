@@ -9,6 +9,29 @@ const VALID_SORTS = [
   'company_asc',
 ];
 
+const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+function isRealCalendarDate(value) {
+  const [year, month, day] = value.split('-').map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return (
+    date.getUTCFullYear() === year &&
+    date.getUTCMonth() === month - 1 &&
+    date.getUTCDate() === day
+  );
+}
+
+const dateField = () =>
+  Joi.string()
+    .trim()
+    .custom((value, helpers) =>
+      DATE_PATTERN.test(value) && isRealCalendarDate(value)
+        ? value
+        : helpers.message('Date must be a valid calendar date in YYYY-MM-DD format')
+    )
+    .allow('', null)
+    .optional();
+
 // ── Create / Update application ───────────────────────────────────────────────
 const applicationBodySchema = Joi.object({
   company:    Joi.string().trim().min(1).max(150).required().messages({
@@ -23,12 +46,8 @@ const applicationBodySchema = Joi.object({
   }),
   salary:     Joi.string().trim().max(50).allow('', null).optional(),
   status:     Joi.string().valid(...VALID_STATUSES).default('WISHLIST'),
-  appliedOn:  Joi.string().isoDate().allow('', null).optional().messages({
-    'string.isoDate': 'Applied date must be a valid ISO date (YYYY-MM-DD)',
-  }),
-  followUpOn: Joi.string().isoDate().allow('', null).optional().messages({
-    'string.isoDate': 'Follow-up date must be a valid ISO date (YYYY-MM-DD)',
-  }),
+  appliedOn:  dateField(),
+  followUpOn: dateField(),
 });
 
 // ── Status-only patch ─────────────────────────────────────────────────────────
