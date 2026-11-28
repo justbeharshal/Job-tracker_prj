@@ -56,3 +56,20 @@ Copy this block for each day.
   - Deployment and production environment/CORS verification.
 
 - Post link:
+
+## Day 4 — 28 November 2026
+
+- Built / Completed:
+  - Started building the React frontend in `client/` (Vite, React Router v6, Tailwind CSS, Axios).
+  - Configured the Axios API client (`client/src/api/axios.js`) with JWT Bearer token injection and 401 session cleanup, plus auth helpers (`client/src/api/auth.js`).
+  - Implemented `AuthContext` (`client/src/context/AuthContext.jsx`) and `ProtectedRoute` (`client/src/components/ProtectedRoute.jsx`) for session persistence and route guarding via `/api/auth/me`.
+  - Completed the **Login** (`client/src/pages/Login.jsx`) and **Register** (`client/src/pages/Register.jsx`) pages matching the Neo-Brutalist design system, plus an authenticated placeholder **Dashboard** page (`client/src/pages/Dashboard.jsx`) with logout support.
+  - Integrated and tested Login, Register, and auth session flows end-to-end with the backend API (`/api/auth/register`, `/api/auth/login`, `/api/auth/me`).
+
+- Remaining:
+  - Full Dashboard stats view (`/api/stats`).
+  - Kanban Board with drag-and-drop stage updates (`PATCH /api/applications/:id/status`).
+  - Applications List (search, stage filter, pagination), Add/Edit Application modal, and Application Detail + Notes page.
+  - Deployment and production environment/CORS verification.
+
+- Post link:
